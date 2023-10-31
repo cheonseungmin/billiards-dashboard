@@ -1,5 +1,14 @@
+import { useState } from "react";
+import Setting from "./Setting";
+
 function App() {
-	return <div>App</div>;
+	const [userList, setUserList] = useState([]);
+
+	return (
+		<div>
+			<Setting userList={userList} setUserList={setUserList} />
+		</div>
+	);
 }
 
 export default App;
